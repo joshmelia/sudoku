@@ -31,8 +31,6 @@ def possible(y,x,n):
                 return False
     return True
 
-a = datetime.now() - startTime
-
 def solve():
     global grid
     for y in range(9):
@@ -45,6 +43,7 @@ def solve():
                         grid[y][x] = 0
                 return
     print(np.matrix(grid))
+    a = datetime.now() - startTime
     print(f"Completed in {a} seconds.")
     input("More?")
 
